@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Cargas from './pages/Cargas'
 import Register from './pages/Register'
 import TarifaRuta from './pages/TarifaRuta'
+import Vehiculos from './pages/Vehiculos'
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 function App(){
@@ -32,6 +33,7 @@ function App(){
       <>
         <Link to="/cargas" className="text-gray-700 hover:text-indigo-600">Cargas</Link>
         <Link to="/tarifaruta" className="text-gray-700 hover:text-indigo-600">Tarifa por ruta</Link>
+        <Link to="/vehiculo" className="text-gray-700 hover:text-indigo-600">Vehiculo</Link>
         <button
           onClick={handleLogout}
           className="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition"
@@ -48,6 +50,7 @@ function App(){
     <Route path='/login' element={<Login setIsAuthenticated={setIsAuthenticated}/>}/>
     <Route path='/cargas' element={<Cargas/>}/>
     <Route path='/tarifaruta' element={<TarifaRuta/>}/>
+    <Route path='/vehiculo' element={<Vehiculos/>}/>
 </Routes>
 </>
 )
