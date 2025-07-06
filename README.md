@@ -98,3 +98,4 @@ cd SmatCargo
 
 ### Desarrolladores: 
 1. Joan Sebastian Izquierdo Arce
+2. Jessica Viviana Viscue
